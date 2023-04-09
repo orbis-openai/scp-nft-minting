@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,html{
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.shadow-inner{
+    box-shadow: inset 0 2px 4px 0 rgb(201 201 201) !important
+}
+.shadow-inner-2 {
+    box-shadow: inset 0 2px 4px 0 rgb(4 4 4) !important;
+}
+
+.btn-txt-shadow{
+    text-shadow: 2px 2px 2px #fff;
+}
+
+
+.customSlider {
+    /* max width of your slider */
+    max-width: 300px;
+    /* Optional: Only If you want to center your slider in the page */
+    margin: auto;
+  }
+  
+  .customSlider-track {
+    /* Top value to align your track to the center of your thumb */
+    top: 8px;
+    /* thickness of the track */
+    height: 2px;
+   /* default color of your track */
+    background: #fff;
+  }
+  
+  .customSlider-track.customSlider-track-0 {
+    /* color of the track before the thumb */
+    background: #e0d297;
+  }
+  .customSlider-thumb {
+    cursor: pointer;
+    /*color for the thumb */
+    background: #996600;
+    /* shape of the thumb: circle */
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    /* remove default outline when selected */
+    outline: none;
+  }
+  
+  .customSlider-thumb:hover {
+    box-shadow: 0 0 0 2px rgba(255, 255, 0, 0.445);
+  }
+  .customSlider-mark {
+    cursor: pointer;
+    top: 6px;
+    width: 1.5px;
+    height: 8px;
+    background-color: green;
+  }
+  .customSlider-mark.customSlider-mark-before {
+    background-color: gray;
+  }
+  .customSlider-mark.customSlider-mark-active {
+    display: none;
+  }
