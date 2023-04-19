@@ -31,7 +31,8 @@ const Collection = () => {
                                     trackClassName="customSlider-track"
                                     markClassName="customSlider-mark"
                                     min={0}
-                                    max={100}
+                                    max={8}
+                                    step={2}
                                     defaultValue={0}
                                     value={currentValue}
                                     onChange={(value) => setCurrentValue(value)}
@@ -45,7 +46,7 @@ const Collection = () => {
                                     }}
                                 />
                             </div>
-                            <div className="uppercase mt-6 pt-6 text-gray-300">number to mint: <span>1</span></div>
+                            <div className="uppercase mt-6 pt-6 text-gray-300">number to mint: <span>{currentValue}</span></div>
                         </div>
                     </div>
                 </div>
@@ -53,8 +54,8 @@ const Collection = () => {
 
             <div className="mt-12 flex flex-wrap justify-center sm:justify-between items-center">
                 <div className="flex items-center flex-wrap justify-center sm:justify-between">
-                    <img src="/images/box.png" className="sm:-ml-14 mt-3 sm:scale-[1.1] mb-5" alt="" />
-                    <a href="" className="sm:mx-10 mt-5 mb-16 md:mb-0">
+                    <img src="/images/box.png" className="sm:-ml-14 mt-3 mx-5 sm:scale-[1.1] mb-5" alt="" />
+                    <a href="" className="mt-5 mb-10 md:mb-0">
                         <img src="/images/how-it-works.png" className="" alt="" />
                     </a>
                 </div>

@@ -6,7 +6,7 @@ const Qualified = () => {
 
     return (
         <div className="px-8">
-            <h1 className="uppercase text-2xl font-bold text-gray-200 pt-14 md:pt-6">My NFT collection</h1>
+            <h1 className="uppercase text-2xl font-bold text-gray-200 pt-14 md:pt-6">My Qualified NFT collection</h1>
             <div className="mb-3 md:mb-0">GAME VALIDITY: <span className="italic">month from - To</span></div>
 
             <div className="lg:flex items-center justify-between md:py-10">
@@ -34,17 +34,17 @@ const Qualified = () => {
                 </div>
             </div>
 
-            <div className="mt-10 flex flex-wrap justify-center lg:justify-between items-center">
-                <div className="flex flex-wrap justify-center md:justify-between items-center">
-                    <img src="/images/box.png" className="sm:-ml-14 mt-3 sm:scale-[1.1] mb-5 hidden sm:block" alt="" />
+            <div className="mt-10 md:flex flex-wrap justify-center lg:justify-between items-center">
+                <div className="flex flex-wrap justify-center lg:justify-between items-center">
+                    <img src="/images/box.png" className="lg:-ml-14 -mt-1 sm:scale-[1.1] mb-5 hidden md:block" alt="" />
 
-                    <div className="mx-8 mb-5">
-                        <div className="mb-5 sm:mb-0 flex flex-wrap justify-center sm:justify-between">
+                    <div className="mx-8 mb-5 md:mb-0 lg:-mb-9">
+                        <div className="mb-5 sm:mb-0 flex flex-wrap justify-center md:justify-between">
                             <button className="inline-block px-5 py-3 rounded-full bg-gradient-to-b from-[#e0d297] to-[#92865e] shadow-inner-2 hover:scale-[1.1] duration-300">
                                 <div className="uppercase font-bold text-[#a93324] text-2xl -mt-[3px] btn-txt-shadow">MINT NFT</div>
                             </button>
 
-                            <div className="mx-5 my-5 sm:my-0">
+                            <div className="w-full md:w-auto mx-5 md:my-0 text-center my-5">
                                 <div className="w-[135px] mx-auto md:mx-0">
                                     <ReactSlider
                                         className="customSlider"
@@ -52,7 +52,8 @@ const Qualified = () => {
                                         trackClassName="customSlider-track"
                                         markClassName="customSlider-mark"
                                         min={0}
-                                        max={100}
+                                        max={8}
+                                        step={2}
                                         defaultValue={0}
                                         value={currentValue}
                                         onChange={(value) => setCurrentValue(value)}
@@ -66,20 +67,20 @@ const Qualified = () => {
                                         }}
                                     />
                                 </div>
-                                <div className="uppercase mt-6 text-gray-300">number to mint: <span>1</span></div>
+                                <div className="uppercase mt-6 text-gray-300">number to mint: <span>{currentValue}</span></div>
                             </div>
                         </div>
 
-                        <div className="flex flex-none flex-wrap justify-center block sm:hidden">
-                            <img src="/images/box.png" className="mt-3 sm:scale-[1.1] mb-5 sm:hidden" alt="" />
+                        <div className="flex flex-none flex-wrap justify-center block lg:hidden">
+                            <img src="/images/box.png" className="mt-3 md:scale-[1.1] mb-5 md:hidden" alt="" />
                         </div>
-                        <a href="" className="sm:mx-10 mt-5 mb-10 md:mb-0 hidden sm:block">
-                            <img src="/images/how-it-works.png" className="" alt="" />
+                        <a href="" className="mt-5 mb-10 md:mb-0">
+                            <img src="/images/how-it-works.png" className="mx-auto md:mx-0 py-5" alt="" />
                         </a>
                     </div>
                 </div>
-                <div>
-                    <img src="/images/scp.png" alt="" />
+                <div className="flex">
+                    <img src="/images/scp.png" className="mx-auto" alt="" />
                 </div>
             </div>
         </div>
